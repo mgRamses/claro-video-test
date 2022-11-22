@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #282c34;
+  position: relative;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.logo{
+  width: 160px;
+  height: 90px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  flex: none;
+}
+
+.event_row{
+  width: '800px';
+  height: 90px;
+  background-color: grey;
+  display: block;
+  flex: 1;
+}
+
+.cellRow{
+  flex: 'none';
+}
+
+.wrap {
+  position: fixed;
+  bottom: 0;
+  height: 50vh;
+  overflow: scroll;
+  width: 100vw;
+}
+
+.timeline {
+  height: 60px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: inline-flex;
+  width: auto;
+}
+
+.grid {
+  position: relative;
+  height: 600px;
+  display: inline-block;
+  margin-top:6px;
+}
+
+.channellist {
+  background-color: #282c34;
+  position: sticky;
+  left: 0;
+  width: 165px;
+  top: 0;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
 }
